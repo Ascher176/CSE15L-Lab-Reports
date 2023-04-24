@@ -18,6 +18,7 @@
 
 ## Part 2
 Code:
+~~~
 public class ArrayExamples {
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
@@ -25,8 +26,10 @@ public class ArrayExamples {
     }
   }
 }  
+~~~   
 
 JUnit test:
+~~~
 import static org.junit.Assert.*;
 import org.junit.*;
 
@@ -38,4 +41,5 @@ public class ArrayTests {
     assertArrayEquals(new int[]{24, 11, 29, 16, 5}, input1);
 	}
 }
+~~~
 
