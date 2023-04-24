@@ -28,7 +28,7 @@ public class ArrayExamples {
 }  
 ```  
 
-JUnit test:
+JUnit test with input that induces an error:
 ```
 import static org.junit.Assert.*;
 import org.junit.*;
@@ -41,5 +41,19 @@ public class ArrayTests {
     assertArrayEquals(new int[]{24, 11, 29, 16, 5}, input1);
 	}
 }
+```   
+JUnit test with input that does not induce an error:
 ```
+import static org.junit.Assert.*;
+import org.junit.*; 
+
+public class ArrayTests {
+    @Test 
+    public void testReverseInPlace() {
+        int[] input2 = {3};
+	ArrayExamples.reverseInPlace(input2);
+	assertArrayEquals(new int[]{3}, input2);
+    }
+}
+
 
