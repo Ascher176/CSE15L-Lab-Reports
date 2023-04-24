@@ -1,3 +1,4 @@
+# Lab report 2
 ## Part 1
 ![Image](codeStringServer.jpg)  
 
@@ -15,7 +16,7 @@ Called methods:
   8. The String variable _str_ which is initially empty becomes _str + parameters[1]_. For screenshot 1 _str_ is updated from "" to "Hi!". For 2 (since _str_ stores the changes made after the 1 case) it is updated from "Hi!" to "Hi!\nMy name is Anya Chernova".
   9. **String.format(str)** returns a formatted string _str_. It is what the **handleRequest(URI url)** method returns for both cases and is what we see on the screenshots.  
 ![Image](StringServer1.jpg)
-![Image](StringServer2.jpg)  
+![Image](StringServer2.jpg)
 
 ## Part 2
 Code before:
