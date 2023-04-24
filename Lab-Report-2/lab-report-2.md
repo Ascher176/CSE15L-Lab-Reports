@@ -14,4 +14,28 @@
   8. The String variable str which is initially empty becomes str + parameter[1]. For screenshot 1 str is updated from "" to "Hi!". For 2 - from "Hi!" to "Hi!\nMy name is Anya Chernova".
   9. String.format(str) returns formatted string. It is what the handleRequest(URI url) returns for both cases and is what we see on the screenshots. 
 ![Image](StringServer1.jpg)
-![Image](StringServer2.jpg)
+![Image](StringServer2.jpg)  
+
+## Part 2
+Code:
+public class ArrayExamples {
+  static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+}  
+
+JUnit test:
+import static org.junit.Assert.*;
+import org.junit.*;
+
+public class ArrayTests {
+	@Test 
+	public void testReverseInPlace() {
+    int[] input1 = {5, 16, 29, 11, 24};
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{24, 11, 29, 16, 5}, input1);
+	}
+}
+
