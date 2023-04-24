@@ -70,4 +70,5 @@ public class ArrayExamples {
         }
     }
 }
-```
+```  
+The code before was just assigning the value of the element at index i to the value of the element at index arr.length - i - 1 instead of swapping them. To actually swap them we need to create an extra variable which will store the initial value of the element at index i, so after we assign the value of the arr.length - i - 1 element to i element, we can change the value of the arr.length - i - 1 element to the initial velue of the i element. In addition, in the loop the condition arr.length < 0 is incorrect since when we reach the middle of the array the values are gonna be swapped back to the original, so the condition is supposed to be arr.length/2 < 0.
