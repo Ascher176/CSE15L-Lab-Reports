@@ -20,11 +20,11 @@
 Code:
 ```
 public class ArrayExamples {
-  static void reverseInPlace(int[] arr) {
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = arr[arr.length - i - 1];
+    static void reverseInPlace(int[] arr) {
+        for(int i = 0; i < arr.length; i += 1) {
+            arr[i] = arr[arr.length - i - 1];
+        }
     }
-  }
 }  
 ```  
 
@@ -34,12 +34,12 @@ import static org.junit.Assert.*;
 import org.junit.*;
 
 public class ArrayTests {
-	@Test 
-	public void testReverseInPlace() {
-    int[] input1 = {5, 16, 29, 11, 24};
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{24, 11, 29, 16, 5}, input1);
-	}
+    @Test 
+    public void testReverseInPlace() {
+        int[] input1 = {5, 16, 29, 11, 24};
+        ArrayExamples.reverseInPlace(input1);
+        assertArrayEquals(new int[]{24, 11, 29, 16, 5}, input1);
+    }
 }
 ```   
 JUnit test with input that does not induce an error:
