@@ -55,3 +55,5 @@ public class ArrayTests {
 	assertArrayEquals(new int[]{3}, input2);
     }
 }
+```  
+![Image](test.jpg)
