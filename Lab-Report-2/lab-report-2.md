@@ -10,6 +10,8 @@
   4. url.getPath().contains("/add-message") checks if the pathname contains the "/add-message" command. For both screenshots the method will return true.
   5. url.getGuery() returns query as a String. For screenshot 1 it is s=Hi!, for 2 - s=My name is Anya Chernova.
   6. url.getQuery().split("=") splits query around "=". For screenshot 1 we get ["s", "Hi!"], for 2 - ["s", "My name is Anya Chernova"].
-  7. 
+  7. parameters[0].equals("s") checks if the first parameter is "s". The method returns true for both screenshots.
+  8. The String variable str which is initially empty becomes str + parameter[1]. For screenshot 1 str is updated from "" to "Hi!". For 2 - from "Hi!" to "Hi!\nMy name is Anya Chernova".
+  9. String.format(str) returns formatted string. It is what the handleRequest(URI url) returns for both cases and is what we see on the screenshots. 
 ![Image](StringServer1.jpg)
 ![Image](StringServer2.jpg)
