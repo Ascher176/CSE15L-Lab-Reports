@@ -71,7 +71,7 @@ find: '911report/chapter-1.txt': No such file or directory
 
 ### mmin  
 _-mmin_ allows us to search files/directories based on the time they were last modified. This can be useful for various tasks e.g. seeing if someone was working on files/directories and which ones were changed in particular. It takes minutes (m) as a parameter. To find files that were modified more than m minutes ago we can add "+" in front of the parameter, for files that were modified less than m minutes ago - "-", and nothing for files that were modified exactly m minutes ago.    
-1. In this example the commands outputs files/directories that were modified less than 5 minutes ago. There are two directories in the output: _911report/_ since I just deleted a file from there, and _technical/_ itself since I just deleted a directory from there.  
+1. In this example the commands outputs files/directories that were modified less than 5 minutes ago. There are two directories in the output: _911report/_ since I just deleted a file from there, and _technical/_ (".") itself since I just deleted a directory from there.  
 ```
 [cs15lsp23lt@ieng6-201]:technical:253$ find -mmin -5 
 .
