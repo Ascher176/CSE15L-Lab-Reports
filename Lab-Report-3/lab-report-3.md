@@ -24,12 +24,59 @@ Source: https://man7.org/linux/man-pages/man1/find.1.html
 ```  
 
 ### type  
-![Image](findtype1.jpg)  
-![Image](findtype2.jpg) 
-### delete  
-![Image](finddelete1.jpg)  
-![Image](finddelete2.jpg)  
-### mmin
-![Image](findmmin1.jpg)  
-![Image](findmmin2.jpg)  
+```
+[cs15lsp23lt@ieng6-201]:technical:243$ find -type d
+.
+./911report
+./biomed
+./government
+./government/About_LSC
+./government/Alcohol_Problems
+./government/Env_Prot_Agen
+./government/Gen_Account_Office
+./government/Media
+./government/Post_Rate_Comm
+./plos
+```
+```
+[cs15lsp23lt@ieng6-201]:technical:245$ find government/Alcohol_Problems/  -type f       
+government/Alcohol_Problems/DraftRecom-PDF.txt
+government/Alcohol_Problems/Session2-PDF.txt
+government/Alcohol_Problems/Session3-PDF.txt
+government/Alcohol_Problems/Session4-PDF.txt
+```  
 
+### delete 
+```
+[cs15lsp23lt@ieng6-201]:technical:246$ find 911report/chapter-1.txt        
+911report/chapter-1.txt
+[cs15lsp23lt@ieng6-201]:technical:247$ find 911report/chapter-1.txt -delete
+[cs15lsp23lt@ieng6-201]:technical:248$ find 911report/chapter-1.txt
+find: '911report/chapter-1.txt': No such file or directory
+```  
+```
+[cs15lsp23lt@ieng6-201]:technical:250$ ls 
+911report  biomed  government  plos
+[cs15lsp23lt@ieng6-201]:technical:251$ find plos/ -delete
+[cs15lsp23lt@ieng6-201]:technical:252$ ls
+911report  biomed  government
+```  
+
+### mmin
+```
+[cs15lsp23lt@ieng6-201]:technical:253$ find -mmin -5 
+.
+./911report
+```
+```
+[cs15lsp23lt@ieng6-201]:technical:282$ find -mmin +50  -type d
+./biomed
+./government
+./government/About_LSC
+./government/Alcohol_Problems
+./government/Env_Prot_Agen
+./government/Gen_Account_Office
+./government/Media
+./government/Post_Rate_Comm
+```  
+Thank you for reading!
