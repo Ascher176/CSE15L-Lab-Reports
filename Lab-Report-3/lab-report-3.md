@@ -1,5 +1,6 @@
 # Lab report
-## find
+## find  
+Source: https://man7.org/linux/man-pages/man1/find.1.html  
 ![Image](findsize1.jpg)  
 ![Image](findsize2.jpg)  
 ![Image](findtype1.jpg)  
