@@ -1,6 +1,6 @@
 # Lab report
 ## find  
-Source: https://man7.org/linux/man-pages/man1/find.1.html  
+Source: [https://man7.org/linux/man-pages/man1/find.1.html](https://man7.org/linux/man-pages/man1/find.1.html)  
 
 ### size
 [-size](https://man7.org/linux/man-pages/man1/find.1.html#:~:text=include%20symbolic%20links.-,%2Dsize,-n%5BcwbkMG%5D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20File) allows us to search files based on their size. This can be useful for various tasks e.g. finding the smallest/biggest file. It takes units of space (n) as a parameter. To find files that are bigger than n we can add "+" in front of the parameter, for files that are smaller - "-", and nothing for files that take exactly n units of space. By default units of space are 512-byte blocks, but we can use other units by adding a suffixes.  
