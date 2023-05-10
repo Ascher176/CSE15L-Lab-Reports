@@ -3,7 +3,7 @@
 Source: https://man7.org/linux/man-pages/man1/find.1.html  
 
 ### size
--size allows us to search files based on their size. This can be useful for various tasks e.g. finding the smallest/biggest file. It takes units of space (n) as a parameter. To find files that are bigger than n we can add "+" in front of the parameter, for files that are smaller - "-", and nothing for files that take exactly n units of space. By default units of space are 512-byte blocks, but we can use other units by adding a suffixes.  
+_-size_ allows us to search files based on their size. This can be useful for various tasks e.g. finding the smallest/biggest file. It takes units of space (n) as a parameter. To find files that are bigger than n we can add "+" in front of the parameter, for files that are smaller - "-", and nothing for files that take exactly n units of space. By default units of space are 512-byte blocks, but we can use other units by adding a suffixes.  
 1. In this example I used a suffix "k" for kibibytes (KiB, units of 1024 bytes), so this command outputs files in technical/ that are bigger than 200 KiB.  
 ```
 [cs15lsp23lt@ieng6-201]:technical:235$ find -size +200k
@@ -24,9 +24,9 @@ Source: https://man7.org/linux/man-pages/man1/find.1.html
 ```  
 
 ### type  
--type allows us to search files based on their type. This can be useful for filtering through files to find the ones of certain type.
+_-type_ allows us to search files based on their type. This can be useful for filtering through files to find the ones of certain type.
 
-1. In this example I used a suffix "k" for kibibytes (KiB, units of 1024 bytes), so this command outputs files in technical/ that are bigger than 200 KiB.
+1. In this example "d" is for directories so the command outputs all the directories in _techical/_ (+ _technical/_ itself as a ".").
 ```
 [cs15lsp23lt@ieng6-201]:technical:243$ find -type d
 .
@@ -40,7 +40,8 @@ Source: https://man7.org/linux/man-pages/man1/find.1.html
 ./government/Media
 ./government/Post_Rate_Comm
 ./plos
-```
+```  
+2. In this example "f" is for regular files. (I used this command on a small directory within _technical/_ instead of just _technical/_ so that the command does not output all ".txt" files but only a small portion contained in _government/Alcohol_Problems/_ for the sake of space in this report.)
 ```
 [cs15lsp23lt@ieng6-201]:technical:245$ find government/Alcohol_Problems/  -type f       
 government/Alcohol_Problems/DraftRecom-PDF.txt
@@ -50,6 +51,8 @@ government/Alcohol_Problems/Session4-PDF.txt
 ```  
 
 ### delete 
+_-delete_ allows us to delete files/directories. It is useful for keeping everything organized by deleting files/directories which are no loger needed.  
+1. In this example I deleted one of the files in the _911report/_ directory. I used _find_ command again to show that the file is gone.
 ```
 [cs15lsp23lt@ieng6-201]:technical:246$ find 911report/chapter-1.txt        
 911report/chapter-1.txt
@@ -57,6 +60,7 @@ government/Alcohol_Problems/Session4-PDF.txt
 [cs15lsp23lt@ieng6-201]:technical:248$ find 911report/chapter-1.txt
 find: '911report/chapter-1.txt': No such file or directory
 ```  
+2. In this example I deleted the whole _plos/_ directory. I used _ls_ command to show that the directory is gone.
 ```
 [cs15lsp23lt@ieng6-201]:technical:250$ ls 
 911report  biomed  government  plos
@@ -65,12 +69,15 @@ find: '911report/chapter-1.txt': No such file or directory
 911report  biomed  government
 ```  
 
-### mmin
+### mmin  
+_-mmin_ allows us to search files/directories based on the time they were last modified. This can be useful for various tasks e.g. seeing if someone was working on files/directories and which ones were changed in particular. It takes minutes (m) as a parameter. To find files that were modified more than m minutes ago we can add "+" in front of the parameter, for files that were modified less than m minutes ago - "-", and nothing for files that were modified exactly m minutes ago.    
+1. In this example the commands outputs files/directories that were modified less than 5 minutes ago. There are two directories in the output: _911report/_ since I just deleted a file from there, and _technical/_ itself since I just deleted a directory from there.  
 ```
 [cs15lsp23lt@ieng6-201]:technical:253$ find -mmin -5 
 .
 ./911report
-```
+```  
+2. In this example the command outputs directories (I combined _mmin_ with _type d_ so that the command would show only directories without all the ".txt" files for the sake of space in this report) that were modified more than 50 minutes ago so we see all the other directories except _technical/_ and _911report/_ which were just modified (and _plos/_ since it was deleted).
 ```
 [cs15lsp23lt@ieng6-201]:technical:282$ find -mmin +50  -type d
 ./biomed
