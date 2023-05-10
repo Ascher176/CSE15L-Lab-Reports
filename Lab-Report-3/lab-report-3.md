@@ -24,6 +24,9 @@ Source: https://man7.org/linux/man-pages/man1/find.1.html
 ```  
 
 ### type  
+-type allows us to search files based on their type. This can be useful for filtering through files to find the ones of certain type.
+
+1. In this example I used a suffix "k" for kibibytes (KiB, units of 1024 bytes), so this command outputs files in technical/ that are bigger than 200 KiB.
 ```
 [cs15lsp23lt@ieng6-201]:technical:243$ find -type d
 .
