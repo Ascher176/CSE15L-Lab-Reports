@@ -73,7 +73,7 @@ git commit -am "changed lab7"<enter>
 git push origin main<enter>  
 ```  
 I typed the commands for commiting and pushing changes to GitHub.  
-The command ran:  
+The commands ran:  
 ```
 $ git commit -am "changed lab7"
 $ git push origin main
