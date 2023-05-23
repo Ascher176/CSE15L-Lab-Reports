@@ -73,5 +73,5 @@ The commands ran:
 $ git commit -am "changed lab7"
 $ git push origin main
 ```
-![9](9.jpg)
+![9](9.jpg)  
 Thank you for reading!
