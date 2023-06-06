@@ -40,4 +40,7 @@ $ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
 ```
 To fix the bug in grade.sh I deleted the variable CPATH and pasted **".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar"** on the line starting with javac, and **".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar"** on the line starting with java.
 
+##  Part 2 – Reflection
+I learned what is vim and how to use it. I find it very helpful and used it to correct the code I have on my ssh account on the remote server. I also learned about bash scripts, and I actually want to start using them in my other coding classes because I find it very convenient. There are several things in this course that I didn't necessarily learned, but they inspired me to seek opportunities to learn on my own. For example, I want to learn to be more efficient with programming (e.g. type faster), create a project of my own during the summer (one of the TAs gave that advice to us).
+
 
