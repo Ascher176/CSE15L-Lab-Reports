@@ -29,7 +29,7 @@ Student response: I now noticed that the CPATH variable is not correct for Windo
 
 ### 4
 Setup:  
-Initially, I took the repository from lab 6 [(https://github.com/ucsd-cse15l-s23/list-examples-grader)](https://github.com/ucsd-cse15l-s23/list-examples-grader) and wrote the grade.sh from the screenshot. This is the link to my uncorrected code: [https://github.com/Ascher176/list-examples-grader-lab-report.git](https://github.com/Ascher176/list-examples-grader-lab-report.git). To set it up I ran the following commands (cloned the repository and chnaged my current working directory to it):
+Initially, I took the repository from lab 6 [(https://github.com/ucsd-cse15l-s23/list-examples-grader)](https://github.com/ucsd-cse15l-s23/list-examples-grader) and wrote the grade.sh from the screenshot. This is the link to my uncorrected code: [https://github.com/Ascher176/list-examples-grader-lab-report.git](https://github.com/Ascher176/list-examples-grader-lab-report.git). To set it up I ran the following commands (cloned (to my Desktop) the repository and chnaged my current working directory to it):
 ```
 $ git clone https://github.com/Ascher176/list-examples-grader-lab-report.git 
 $ cd list-examples-grader-lab-report/
