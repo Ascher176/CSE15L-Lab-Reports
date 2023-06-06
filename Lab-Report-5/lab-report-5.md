@@ -2,6 +2,7 @@
 ## Part 1 – Debugging Scenario
 ### 1
 EdStem quastion:  
+
 What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?  
 
 Windows, VSCode  
@@ -15,6 +16,7 @@ And these are the errors I get:
 ![image2](image2.jpg)  
 
 Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.  
+
 I am running the command $ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected. (The link to the repository comes from lab 6) 
 
 ### 2
