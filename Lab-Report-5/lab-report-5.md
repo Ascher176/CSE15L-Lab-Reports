@@ -23,8 +23,13 @@ Student response: I now noticed that the CPATH variable is not correct for Windo
 
 ### 4
 Setup:  
-Initially, I took the repository from lab 6 [(https://github.com/ucsd-cse15l-s23/list-examples-grader)](https://github.com/ucsd-cse15l-s23/list-examples-grader) and wrote the grade.sh from the screenshot. This is the link to my uncorrected code: [https://github.com/Ascher176/list-examples-grader-lab-report.git](https://github.com/Ascher176/list-examples-grader-lab-report.git) - I "git clone"ed it and ran the bash command to get the error:  
+Initially, I took the repository from lab 6 [(https://github.com/ucsd-cse15l-s23/list-examples-grader)](https://github.com/ucsd-cse15l-s23/list-examples-grader) and wrote the grade.sh from the screenshot. This is the link to my uncorrected code: [https://github.com/Ascher176/list-examples-grader-lab-report.git](https://github.com/Ascher176/list-examples-grader-lab-report.git). To set it up I ran the following commands (cloned the repository and chnaged my current working directory to it):
+```
+$ git clone https://github.com/Ascher176/list-examples-grader-lab-report.git 
+$ cd list-examples-grader-lab-report/
+```
+The error inducing command (running the bash script):  
 $ bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected  
-To fix the bug in grade.sh I deleted the variable CPATH and pasted **".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar"** on the line starting with "javac", and **".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar"** on the line starting with "java".
+To fix the bug in grade.sh I deleted the variable CPATH and pasted **".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar"** on the line starting with javac, and **".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar"** on the line starting with java.
 
 
