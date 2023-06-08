@@ -1,5 +1,6 @@
 # Lab Report 4
 ## Log into ieng6:
+**Keystrokes:**
 ```
 <CTRL-R>ssh<enter>
 ```
@@ -10,6 +11,7 @@ $ ssh cs15lsp23lt@ieng6.ucsd.edu
 ```
 ![4](4.jpg)
 ## Clone your fork of the repository from your Github account:
+**Keystrokes:**
 ```
 <CTRL-R>git<enter>
 ```
@@ -21,8 +23,9 @@ $ git clone git@github.com:Ascher176/lab7.git
 ```
 ![5](5.jpg)
 ## Run the tests, demonstrating that they fail:
+**Keystrokes:**
 ```
-cd lab7<enter>
+cd<space>lab7<enter>
 <up><up><up><up><enter>
 <up><up><up><up><enter>
 ```
@@ -36,8 +39,9 @@ $ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUn
 ```
 ![6](6.jpg)
 ## Edit the code file to fix the failing test:
+**Keystrokes:**
 ```
-vim Li<tab>.java<enter>
+vim<space>Li<tab>.java<enter>
 i<up><up><up><up><up><up><right>(12 times)<delete>2<esc>:wq
 ```
 I entered vim and used tab to autofill the filename for me.
@@ -51,6 +55,7 @@ vim ListExamples.java
 ![71](71.jpg)
 ![72](72.jpg)
 ## Run the tests, demonstrating that they now succeed:
+**Keystrokes:**
 ```
 <up><up><up><enter>
 <up><up><up><enter>
@@ -63,9 +68,10 @@ $ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUn
 ```
 ![8](8.jpg)
 ## Commit and push the resulting change to your Github account:
+**Keystrokes:**
 ```
-git commit -am "changed lab7"<enter>
-git push origin main<enter>
+git<space>commit<space>-am<space>"changed lab7"<enter>
+git<space>push<space>origin<space>main<enter>
 ```
 I typed the commands for commiting and pushing changes to GitHub.
 The commands ran:
