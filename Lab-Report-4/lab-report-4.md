@@ -42,7 +42,7 @@ $ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUn
 **Keystrokes:**
 ```
 vim<space>Li<tab>.java<enter>
-i<up><up><up><up><up><up><right>(12 times)<delete>2<esc>:wq
+i<up><up><up><up><up><up><right><right><right><right><right><right><right><right><right><right><right><right><delete>2<esc>:wq
 ```
 I entered vim and used tab to autofill the filename for me.
 In vim I pressed i to enter the insert mode, accessed the place that I needed
